@@ -1,4 +1,4 @@
-import { BrowserRouter as MainRouter, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as MainRouter, Routes, Route } from 'react-router-dom';
 import { App } from './App';
 import { SecondPage } from './pages';
 
@@ -8,14 +8,14 @@ export const Router = ({}: RouterProps) => {
     console.log('object');
     return (
         <MainRouter>
-            <Switch>
+            <Routes>
                 <Route path="/second">
                     <SecondPage />
                 </Route>
                 <Route path="/">
                     <App />
                 </Route>
-            </Switch>
+            </Routes>
         </MainRouter>
     );
 };
