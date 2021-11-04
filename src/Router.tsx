@@ -9,12 +9,8 @@ export const Router = ({}: RouterProps) => {
     return (
         <MainRouter>
             <Routes>
-                <Route path="/second">
-                    <SecondPage />
-                </Route>
-                <Route path="/">
-                    <App />
-                </Route>
+                <Route path="/second" element={<SecondPage />} />
+                <Route path="/" element={<App />} />
             </Routes>
         </MainRouter>
     );
