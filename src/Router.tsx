@@ -5,7 +5,6 @@ import { SecondPage } from './pages';
 export interface RouterProps {}
 
 export const Router = ({}: RouterProps) => {
-    console.log('object');
     return (
         <MainRouter>
             <Routes>
